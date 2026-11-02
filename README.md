@@ -1,4 +1,4 @@
-# Kenya Economic & Weather Intelligence Pipeline
+# KenyaPulse
 
 A production-grade, fully Dockerized data engineering pipeline that ingests, stores, transforms, and visualizes economic and weather data for Kenya.
 
