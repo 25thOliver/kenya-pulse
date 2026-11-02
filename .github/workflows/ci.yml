@@ -1,7 +1,3 @@
-
-**`.github/workflows/ci.yml`:**
-
-```yaml
 name: CI
 
 on:
@@ -12,7 +8,7 @@ on:
 
 jobs:
   test:
-    name: Lint & Test
+    name: Lint and Test
     runs-on: ubuntu-latest
 
     steps:
@@ -31,10 +27,7 @@ jobs:
           pip install -r ingestion/requirements.txt
 
       - name: Lint with ruff
-        run: |
-          pip install ruff==0.8.6
-          ruff check ingestion/src/ airflow/dags/ tests/
+        run: ruff check ingestion/src/ airflow/dags/ tests/
 
       - name: Run unit tests
-        run: |
-          PYTHONPATH=ingestion/src pytest tests/ -v --tb=short
+        run: PYTHONPATH=ingestion/src pytest tests/ -v --tb=short
