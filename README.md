@@ -1,6 +1,8 @@
 # KenyaPulse
 
-A production-grade, fully Dockerized data engineering pipeline that ingests, stores, transforms, and visualizes economic and weather data for Kenya.
+An automated data platform integrating Kenya's economic indicators and weather observations into analytics-ready datasets.
+
+Fully Dockerized data engineering pipeline that ingests, stores, transforms, and visualizes economic and weather data for Kenya.
 
 Built as a portfolio project demonstrating real-world data engineering practices: incremental ingestion, idempotent upserts, a dbt mart layer, Airflow orchestration, and MinIO raw data preservation.
 
